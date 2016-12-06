@@ -5,7 +5,9 @@
   "devDependencies": {
     "handlebars": "^4.0.6",
     "metalsmith": "^2.3.0",
+    "metalsmith-html-minifier": "^2.2.0",
     "metalsmith-layouts": "^1.7.0",
+    "metalsmith-open-graph": "0.0.3",
     "metalsmith-watch": "^1.0.3"
   },
   "scripts": {

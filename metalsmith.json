@@ -7,6 +7,13 @@
             "default": "default.hbs",
             "rename": true
         },
+        "metalsmith-open-graph": {
+          "siteurl": "https://experiment.fluffel.io",
+          "title": "title",
+          "description": "subTitle",
+          "image": "#og-image"
+        },
+        "metalsmith-html-minifier": "*.html",
         "metalsmith-watch": {
           "paths": {
             "${source}/**/*": true,

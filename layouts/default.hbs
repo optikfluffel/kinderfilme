@@ -38,10 +38,8 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-
       background: #74b29f;
       color: #fff;
-
       padding: 2rem 4rem;
     }
     section > header > img {
@@ -54,36 +52,29 @@
     section > article:nth-child(2) {
       padding-left: 4rem;
     }
-
     .small {
       font-size: 0.9rem;
     }
-
     .footer {
       text-align: right;
     }
-
     @media only screen and (max-device-width: 1023px) {
       section {
         flex-direction: column;
       }
       section > * {
         width: auto;
-        /*order: 0;*/
-        /*flex: 1 1;
-        align-self: auto;*/
       }
       section > article:nth-child(2) {
         padding-left: 0;
       }
     }
   </style>
-
   <header role="banner">
     <h1>{{title}}</h1>
     <p>{{subTitle}}</p>
 
-    <img src="https://placekitten.com/g/1200/250" alt="">
+    <img id="og-image" src="https://placekitten.com/g/1200/250" alt="">
   </header>
 
   {{{ contents }}}
