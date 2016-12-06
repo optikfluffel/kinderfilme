@@ -1,0 +1,18 @@
+{
+    "source": "src",
+    "destination": "build",
+    "plugins": {
+        "metalsmith-layouts": {
+            "engine": "handlebars",
+            "default": "default.hbs",
+            "rename": true
+        },
+        "metalsmith-watch": {
+          "paths": {
+            "${source}/**/*": true,
+            "layouts/**/*": "**/*"
+          },
+          "livereload": true
+        }
+    }
+}

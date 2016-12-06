@@ -1,0 +1,17 @@
+{
+  "name": "experiment.fluffel.io",
+  "version": "0.0.1",
+  "description": "Elternbroschüre zum Umgang mit Geschlechterrollen",
+  "devDependencies": {
+    "handlebars": "^4.0.6",
+    "metalsmith": "^2.3.0",
+    "metalsmith-layouts": "^1.7.0",
+    "metalsmith-watch": "^1.0.3"
+  },
+  "scripts": {
+    "start": "node ./node_modules/metalsmith/bin/metalsmith",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "optikfluffel",
+  "license": "WTFPL"
+}

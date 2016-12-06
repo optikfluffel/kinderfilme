@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Jungen Mädchen Kinderfilme</title>
+  <meta name="description" content="Elternbroschüre zum Umgang mit Geschlechterrollen">
+  <meta name="author" content="Tanja Dinnis">
+
+  {{!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> --}}
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <style media="screen">
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    header p {
+      font-size: 1.5rem;
+    }
+    section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      background: #74b29f;
+      color: #fff;
+
+      padding: 2rem 4rem;
+    }
+    section > header > img {
+      max-width: 100%;
+    }
+    section > * {
+      width: 50%;
+      flex: 1;
+    }
+    section > article:nth-child(2) {
+      padding-left: 4rem;
+    }
+
+    .small {
+      font-size: 0.9rem;
+    }
+
+    .footer {
+      text-align: right;
+    }
+
+    @media only screen and (max-device-width: 1023px) {
+      section {
+        flex-direction: column;
+      }
+      section > * {
+        width: auto;
+        /*order: 0;*/
+        /*flex: 1 1;
+        align-self: auto;*/
+      }
+      section > article:nth-child(2) {
+        padding-left: 0;
+      }
+    }
+  </style>
+
+  <header role="banner">
+    <h1>{{title}}</h1>
+    <p>{{subTitle}}</p>
+
+    <img src="https://placekitten.com/g/1200/250" alt="">
+  </header>
+
+  {{{ contents }}}
+
+  {{!-- TODO: REMOVE --}}
+  <script src="http://localhost:35729/livereload.js"></script>
+</body>
+
+</html>
