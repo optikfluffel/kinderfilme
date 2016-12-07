@@ -18,6 +18,8 @@
 </head>
 
 <body>
+  <!-- TODO: Bilder und Schriftgrößen anpassen -->
+  <!-- TODO: Farben der Links anpassen -->
   <style media="screen">
     body {
       font-family: 'Open Sans', sans-serif;
@@ -52,13 +54,23 @@
       width: 50%;
       flex: 1;
     }
+    section > article p {
+      text-align: justify;
+    }
+    .source {
+      margin: 1rem 0;
+      display: inline-block;
+    }
     section > article:nth-child(2) {
       padding-left: 4rem;
     }
     .small {
       font-size: 0.9rem;
     }
-    .footer {
+    .sources-and-links > p {
+      text-align: left;
+    }
+    footer > p {
       text-align: right;
     }
     @media only screen and (max-device-width: 1023px) {
@@ -77,13 +89,13 @@
     <h1>{{title}}</h1>
     <p>{{subTitle}}</p>
 
-    <img id="og-image" src="https://placekitten.com/g/1200/250" alt="">
+    <img id="og-image" src="images/dori.jpg" alt="">
   </header>
 
   {{{ contents }}}
 
   {{!-- TODO: REMOVE --}}
-  <script src="http://localhost:35729/livereload.js"></script>
+  <script src="http://zazzles.local:35729/livereload.js"></script>
 </body>
 
 </html>
