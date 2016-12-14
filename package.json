@@ -3,10 +3,12 @@
   "version": "0.0.1",
   "description": "Elternbroschüre zum Umgang mit Geschlechterrollen",
   "devDependencies": {
+    "browser-sync": "^2.18.5",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-hb": "^5.1.4",
     "gulp-htmlmin": "^3.0.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.0.0",
     "gulp-watch": "^4.3.11",
     "typi": "^2.3.0"
