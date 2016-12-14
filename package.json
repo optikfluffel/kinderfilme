@@ -3,15 +3,15 @@
   "version": "0.0.1",
   "description": "Elternbroschüre zum Umgang mit Geschlechterrollen",
   "devDependencies": {
-    "handlebars": "^4.0.6",
-    "metalsmith": "^2.3.0",
-    "metalsmith-html-minifier": "^2.2.0",
-    "metalsmith-layouts": "^1.7.0",
-    "metalsmith-open-graph": "0.0.3",
-    "metalsmith-watch": "^1.0.3"
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-hb": "^5.1.4",
+    "gulp-sass": "^3.0.0",
+    "gulp-watch": "^4.3.11"
   },
   "scripts": {
-    "start": "node ./node_modules/metalsmith/bin/metalsmith",
+    "start": "node ./node_modules/gulp/bin/gulp.js",
+    "build": "node ./node_modules/gulp/bin/gulp.js build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "optikfluffel",

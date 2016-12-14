@@ -1,0 +1,83 @@
+// colors
+$white: #fff;
+$green: #74b29f;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+
+  > h1 {
+    font-size: 2rem;
+  }
+
+  > p {
+    font-size: 1.5rem;
+  }
+
+  > img {
+    max-width: 100%;
+  }
+}
+
+section {
+  align-items: center;
+  background: $green;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem 4rem;
+
+  > * {
+    flex: 1;
+    width: 50%;
+  }
+
+  > header > img {
+    max-width: 100%;
+  }
+
+  > article p {
+    text-align: justify;
+  }
+
+  > article:nth-child(2) {
+    padding-left: 4rem;
+  }
+}
+
+.source {
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.small {
+  font-size: .9rem;
+}
+
+.sources-and-links > p {
+  text-align: left;
+}
+
+footer > p {
+  text-align: right;
+}
+
+@media only screen and (max-device-width: 1023px) {
+  section {
+    flex-direction: column;
+  }
+
+  section > * {
+    width: auto;
+  }
+
+  section > article:nth-child(2) {
+    padding-left: 0;
+  }
+}
