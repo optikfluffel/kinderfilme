@@ -95,8 +95,12 @@ small,
   text-align: left;
 }
 
-footer > p {
-  text-align: right;
+footer {
+  align-self: flex-end;
+
+  > p {
+    text-align: right;
+  }
 }
 
 @media only screen and (max-device-width: 1023px) {
