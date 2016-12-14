@@ -7,15 +7,15 @@ const htmlmin = require('gulp-htmlmin');
 
 // ------------------------------ CLEAN ------------------------------
 gulp.task('clean:handlebars', function() {
-  return gulp.src('build/**/*.html', {read: false})
+  return gulp.src('docs/**/*.html', {read: false})
     .pipe(clean());
 });
 gulp.task('clean:sass', function() {
-  return gulp.src('build/css/**/*', {read: false})
+  return gulp.src('docs/css/**/*', {read: false})
     .pipe(clean());
 });
 gulp.task('clean:images', function() {
-  return gulp.src('build/images/**/*', {read: false})
+  return gulp.src('docs/images/**/*', {read: false})
     .pipe(clean());
 });
 
@@ -27,18 +27,18 @@ gulp.task('handlebars', ['clean:handlebars'], function() {
       partials: 'src/partials/**/*.hbs',
     }))
     .pipe(htmlmin())
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('docs'));
 });
 
 gulp.task('sass', ['clean:sass'], function () {
   return gulp.src('src/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('build/css'));
+    .pipe(gulp.dest('docs/css'));
 });
 
 gulp.task('images', ['clean:images'], function() {
   return gulp.src('src/images/**/*')
-    .pipe(gulp.dest('build/images'));
+    .pipe(gulp.dest('docs/images'));
 });
 
 // ------------------------------ WATCH ------------------------------
