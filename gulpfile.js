@@ -3,6 +3,7 @@ const clean = require('gulp-clean');
 const hb = require('gulp-hb');
 const sass = require('gulp-sass');
 const watch = require('gulp-watch');
+const htmlmin = require('gulp-htmlmin');
 
 // ------------------------------ CLEAN ------------------------------
 gulp.task('clean:handlebars', function() {
@@ -25,6 +26,7 @@ gulp.task('handlebars', ['clean:handlebars'], function() {
     .pipe(hb({
       partials: 'src/partials/**/*.hbs',
     }))
+    .pipe(htmlmin())
     .pipe(gulp.dest('build'));
 });
 

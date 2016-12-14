@@ -1,8 +1,8 @@
 // typi + settings
 @import '../../node_modules/typi/scss/typi';
 $breakpoints: (
-  small: 480px,
-  large: 1024px
+  small: 800px,
+  large: 1280px
 );
 $typi: (
   null: 16px,
@@ -13,7 +13,7 @@ $typi: (
 // colors
 $font-color: #fff;
 $background-color: #74b29f;
-$link-color: #ddd;
+$link-color: #fff;
 $link-hover-color: #000;
 
 // links
@@ -84,6 +84,18 @@ section {
 .source {
   display: inline-block;
   margin: 1rem 0;
+}
+
+.tip {
+  background: $font-color;
+  color: $background-color;
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-align: left;
+
+  a {
+    color: $background-color;
+  }
 }
 
 small,
