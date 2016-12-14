@@ -1,6 +1,38 @@
+// typi + settings
+@import '../../node_modules/typi/scss/typi';
+$breakpoints: (
+  small: 480px,
+  large: 1024px
+);
+$typi: (
+  null: 16px,
+  small: 18px,
+  large: 20px
+);
+
 // colors
-$white: #fff;
-$green: #74b29f;
+$font-color: #fff;
+$background-color: #74b29f;
+$link-color: #ddd;
+$link-hover-color: #000;
+
+// links
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+#{$a-tags} {
+  color: $link-color;
+  // text-decoration: none;
+}
+
+#{$a-tags-hover} {
+  color: $link-hover-color;
+}
+
+// styles
+html {
+  @include typi-base();
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -11,23 +43,15 @@ body {
 header {
   text-align: center;
 
-  > h1 {
-    font-size: 2rem;
-  }
-
-  > p {
-    font-size: 1.5rem;
-  }
-
   > img {
     max-width: 100%;
   }
 }
 
 section {
-  align-items: center;
-  background: $green;
-  color: $white;
+  align-items: flex-start;
+  background: $background-color;
+  color: $font-color;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -38,12 +62,18 @@ section {
     width: 50%;
   }
 
-  > header > img {
-    max-width: 100%;
+  > header {
+    align-self: center;
+
+    > img {
+      max-width: 100%;
+    }
   }
 
-  > article p {
-    text-align: justify;
+  > article {
+    p {
+      text-align: justify;
+    }
   }
 
   > article:nth-child(2) {
@@ -56,8 +86,9 @@ section {
   margin: 1rem 0;
 }
 
+small,
 .small {
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 .sources-and-links > p {
@@ -71,6 +102,7 @@ footer > p {
 @media only screen and (max-device-width: 1023px) {
   section {
     flex-direction: column;
+    padding: 1rem 2rem;
   }
 
   section > * {
