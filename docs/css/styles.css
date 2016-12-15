@@ -72,7 +72,13 @@ footer {
   section {
     flex-direction: column;
     padding: 1rem 2rem; }
-  section > * {
-    width: auto; }
-  section > article:nth-child(2) {
-    padding-left: 0; } }
+    section > * {
+      width: auto; }
+    section > article:nth-child(2) {
+      padding-left: 0; }
+  footer {
+    align-self: stretch;
+    border-top: 1px solid #fff;
+    margin: 1rem 0; }
+    footer > p {
+      text-align: center; } }
