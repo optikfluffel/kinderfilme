@@ -28,8 +28,11 @@ gulp.task('handlebars', ['clean:handlebars'], function() {
     .pipe(hb({
       partials: 'src/partials/**/*.hbs',
     }))
-    .pipe(htmlmin())
     .pipe(rename({extname: '.html'}))
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
     .pipe(gulp.dest('docs'));
 });
 
