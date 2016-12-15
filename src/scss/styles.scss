@@ -5,9 +5,9 @@ $breakpoints: (
   large: 1280px
 );
 $typi: (
-  null: 16px,
-  small: 18px,
-  large: 20px
+  null: 24px,
+  small: 20px,
+  large: 16px
 );
 
 // colors
@@ -55,7 +55,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 2rem 4rem;
+  padding: 1rem 2rem;
 
   > * {
     flex: 1;
@@ -100,7 +100,7 @@ section {
 
 small,
 .small {
-  font-size: .8rem;
+  font-size: .85em;
 }
 
 .sources-and-links > p {

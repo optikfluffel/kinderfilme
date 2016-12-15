@@ -5,13 +5,13 @@ a:active, a:hover {
   color: #000; }
 
 html {
-  font-size: 100%; }
+  font-size: 150%; }
   @media all and (min-width: 800px) {
     html {
-      font-size: 112.5%; } }
+      font-size: 125%; } }
   @media all and (min-width: 1280px) {
     html {
-      font-size: 125%; } }
+      font-size: 100%; } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -30,7 +30,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 2rem 4rem; }
+  padding: 1rem 2rem; }
   section > * {
     flex: 1;
     width: 50%; }
@@ -58,7 +58,7 @@ section {
 
 small,
 .small {
-  font-size: .8rem; }
+  font-size: .85em; }
 
 .sources-and-links > p {
   text-align: left; }
